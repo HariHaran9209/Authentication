@@ -1,0 +1,25 @@
+{
+  "name": "authentication",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./backend/server.js",
+    "server": "node ./backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HariHaran9209/Authentication.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HariHaran9209/Authentication/issues"
+  },
+  "homepage": "https://github.com/HariHaran9209/Authentication#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
