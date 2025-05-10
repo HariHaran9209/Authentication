@@ -1,20 +1,43 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+function NavItem({ text, onClick }) {
   return (
-    <div className='bg-gray-700'>
-       <div className="flex justify-between items-center max-w-6xl mx-auto p-3">
-            <Link to='/'><h1 className="font-bold">Auth App</h1></Link>
-            <ul className='flex gap-4'>
-                <Link to='/'><li>Home</li></Link>
-                <Link to='/about'><li>About</li></Link>
-                <Link to='/login'><li>Login</li></Link>
-                <Link to='/register'><li>Register</li></Link>
-            </ul>
-       </div>
+    <div className="justify-center py-2 cursor-pointer" onClick={onClick}>
+      {text}
     </div>
-  )
+  );
 }
 
-export default Navbar
+function Navbar() {
+
+  const navigate = useNavigate()
+
+  const [navItems, setNavItems] = useState([
+    { text: "Home", onClick: () => navigate('/') },
+    { text: "About", onClick: () => navigate('/about') }
+  ]);
+
+  return (
+    <div className="flex gap-5 justify-between items-center py-1.5 px-6 rounded-3xl backdrop-blur-[17.5px] bg-opacity-80 w-full max-w-full flex-wrap sm:flex-nowrap sm:py-4 sm:px-10 bg-[#ffffffff]">
+      <div className="flex gap-2 justify-between items-center py-1.5 my-auto w-full sm:w-auto">
+        <div className="my-auto cursor-pointer uppercase font-extrabold text-lg text-zinc-950" onClick={() => navigate('/')}>
+          Auth App
+        </div>
+      </div>
+      <nav className="flex sm:flex-row flex-col gap-5 justify-center items-center self-stretch my-auto text-base text-center text-neutral-900 font-light w-full sm:w-auto">
+        {navItems.map((item, index) => (
+          <NavItem key={index} text={item.text} onClick={item.onClick} />
+        ))}
+      </nav>
+      <button
+        className="justify-center self-stretch sm:self-auto px-6 py-5 text-base leading-6 text-center text-white rounded-2xl bg-neutral-900 max-md:px-5 font-light w-full sm:w-auto cursor-pointer"
+        onClick={() => navigate('/register')}
+      >
+        Register
+      </button>
+    </div>
+  );
+}
+
+export default Navbar;
