@@ -41,3 +41,6 @@ function Navbar() {
 }
 
 export default Navbar;
+
+//Bro, nee solluvala, like, oru maari irruku sometime, some sort of feeling comes and goes, i guess i can feel it nowadays, naa normala tha irrunthan, but suddenly my heart feels heavy, overthinking, overreacting, doing some shits without thinking of anything like now, i know you're busy(or maybe don't wanna talk with me) and i'm torturing but, i can't hold it back so long, like, soo many thoughts, naanu bangalore pona distract aaguvenu nenacha but naa apa okay va irruke, konja neram kalichu thiripiyu oru maariya irruku, but bro
+//Bro, yaarachu unna vidu poirukangala, who's so close, both trusting that each of you won't go away but some day they go and you want it back so badly that you're ready to do anything to get back but you don't even know the reason.....!? Unnaku yaarum apdilam pannirukangala bro.....!? And what did you do to overcome, like move on from it.....!?
