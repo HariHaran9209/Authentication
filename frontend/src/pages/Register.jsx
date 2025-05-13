@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import { Link } from 'react-router-dom'
-
-const Register = () => {
-  return (
-    <div className='p-3 max-w-lg mx-auto'>
-      <h1 className='text-3xl text-center font-semibold my-7'>Register</h1>
-      <form className='flex flex-col gap-4'>
-        <input type="text" id='username' name='username' placeholder='Username' className='bg-slate-100 p-3 rounded-lg'/>
-        <input type="text" id='email' name='email' placeholder='Email' className='bg-slate-100 p-3 rounded-lg'/>
-        <input type="password" id='password' name='password' placeholder='Password' className='bg-slate-100 p-3 rounded-lg'/>
-        <input type="password" id='confirmPassword' name='confirmPassword' placeholder='Confirm Password' className='bg-slate-100 p-3 rounded-lg'/>
-        <button className="bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95">Register</button>
-=======
 import React, { useState } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
@@ -55,16 +40,12 @@ const Register = () => {
         <input type="password" onChange={handleChange} id='password' name='password' placeholder='Password' className='bg-slate-100 p-3 rounded-lg'/>
         <input type="password" onChange={handleChange} id='confirmPassword' name='confirmPassword' placeholder='Confirm Password' className='bg-slate-100 p-3 rounded-lg'/>
         <button disabled={loading} type='submit' className="bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95">{ loading ? 'Loading...' : "Register"}</button>
->>>>>>> 8025f35 (Complete Register Functionality)
       </form>
       <div className="flex gap-2 mt-5">
         <p>Have An Account...!?</p>
         <Link to='/login'><span className="text-blue-500">Login</span></Link>
       </div>
-<<<<<<< HEAD
-=======
       <p className="text-red-700 mt-5">{ error && 'Something Went Wrong!'}</p>
->>>>>>> 8025f35 (Complete Register Functionality)
     </div>
   )
 }
