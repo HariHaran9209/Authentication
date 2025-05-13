@@ -13,11 +13,16 @@ dotenv.config()
 const app = express()
 const port = 5000
 
+<<<<<<< HEAD
 app.use(express.json())
 <<<<<<< HEAD
 =======
 app.use(cors())
 >>>>>>> 8025f35 (Complete Register Functionality)
+=======
+app.use(cors())
+app.use(express.json())
+>>>>>>> a9879da (Complete Register Functionality)
 
 app.listen(port, () => {
     connectDB()

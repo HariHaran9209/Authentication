@@ -22,7 +22,6 @@ const Register = () => {
   const [ formData, setFormData ] = useState({})
   const [ error, setError ] = useState(false)
   const [ loading, setLoading ] = useState(false)
-  const Backend_Uri = import.meta.env.VITE_BACKEND_URI
 
   const handleChange = (e) => {
     setFormData({...formData, [e.target.id]: e.target.value})
