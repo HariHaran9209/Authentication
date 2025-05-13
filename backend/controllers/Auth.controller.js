@@ -1,5 +1,9 @@
 import User from '../models/User.model.js'
 import bcrypt from 'bcryptjs'
+<<<<<<< HEAD
+=======
+import validator from 'validator'
+>>>>>>> 8025f35 (Complete Register Functionality)
 
 export const register = async (req, res, next) => {
     const { username, email, password, confirmPassword } = req.body
