@@ -15,7 +15,7 @@ app.use(cors())
 
 app.listen(port, () => {
     connectDB()
-    console.log(`Server Is Running At http:localhost:${port}`)
+    console.log(`Server Is Running At http:localhost//${port}`)
 })
 
 app.use('/api/user', UserRoutes)
