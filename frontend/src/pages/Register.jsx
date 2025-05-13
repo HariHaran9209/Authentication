@@ -17,14 +17,7 @@ const Register = () => {
     try {
       setLoading(true)
       const response = await axios.post(`http://localhost:5000/api/auth/register`, formData)
-      if (response.data.success) {
-        console.log(response.data);
-      }      
       setLoading(false)
-      if (data.success === false) {
-        setError(true)
-        return;
-      }
     } catch (error) {
       setLoading(false)
       setError(true)
